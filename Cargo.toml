@@ -5,5 +5,8 @@ authors = ["S.Percentage <Syn.Tri.Naga@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-winapi = { version = "0.3", features = ["winuser", "libloaderapi"] }
-bedrock = { git = "https://github.com/Pctg-x8/bedrock", branch = "peridot", features = ["Implements", "Presentation", "VK_KHR_external_memory_win32", "VK_KHR_win32_keyed_mutex"] }
+winapi = { version = "0.3", features = ["winuser", "libloaderapi", "unknwnbase", "dxgitype", "dxgi", "dxgi1_3", "dxgi1_2", "winerror", "d3d12", "d3dcommon", "dxgiformat", "dcomp", "d3d12sdklayers", "winnt", "handleapi"] }
+bedrock = { git = "https://github.com/Pctg-x8/bedrock", branch = "peridot", features = ["Implements", "Presentation", "VK_EXT_debug_report", "VK_KHR_external_memory_win32", "VK_KHR_win32_keyed_mutex"] }
+libc = "0.2"
+uninit = "0.4"
+widestring = "0.4"

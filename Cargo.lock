@@ -62,12 +62,27 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f7fe0bb3479651439c9112f72b6c505038574c9fbb575ed1bf3b797fa39dd564"
 
 [[package]]
+name = "uninit"
+version = "0.4.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "6ce382f462302087c8effe69a6c9e84ae8ce6a9cc541d921d0bb5d1fd789cdbf"
+
+[[package]]
 name = "vk-noredirect-render"
 version = "0.1.0"
 dependencies = [
  "bedrock",
+ "libc",
+ "uninit",
+ "widestring",
  "winapi",
 ]
+
+[[package]]
+name = "widestring"
+version = "0.4.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c168940144dd21fd8046987c16a46a33d5fc84eec29ef9dcddc2ac9e31526b7c"
 
 [[package]]
 name = "winapi"
