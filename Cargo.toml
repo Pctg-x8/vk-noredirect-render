@@ -1,0 +1,9 @@
+[package]
+name = "vk-noredirect-render"
+version = "0.1.0"
+authors = ["S.Percentage <Syn.Tri.Naga@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+winapi = { version = "0.3", features = ["winuser", "libloaderapi"] }
+bedrock = { git = "https://github.com/Pctg-x8/bedrock", branch = "peridot", features = ["Implements", "Presentation", "VK_KHR_external_memory_win32", "VK_KHR_win32_keyed_mutex"] }
